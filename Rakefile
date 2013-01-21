@@ -16,7 +16,7 @@ RSpec::Core::RakeTask.new(:synchrony) do |t|
   if defined?(Fiber)
     t.pattern = "spec/synchrony/**/*_spec.rb"
   else
-    exit
+    exit 0
   end
 end
 
